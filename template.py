@@ -8,11 +8,13 @@ template = PromptTemplate(
 
     Teach me the topic of {topic} from {subject} as if I am a student in {teacher} preparing for exams.
 
+    provide necessary and relevant figures, diagrams, tables for quick and a clear understanding.
+    
     Provide:
     1. A conceptual explanation of the topic
     2. Key formulas or principles involved
-    3. A step-by-step solved example (JEE-level)
-    4. Common mistakes students make
+    3. A very in depth explaination of each and every important topic.
+    4. Give a quick revision of topics.
     5. Practice questions with brief hints or answers
     """
 )

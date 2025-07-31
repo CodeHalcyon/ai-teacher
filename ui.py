@@ -13,11 +13,12 @@ def load_my_prompt():
 
 @st.cache_resource
 def get_model():
-    llm = HuggingFaceEndpoint(
-        model='meta-llama/Llama-3.1-8B-Instruct',
-        task='text-generation'
-    )
-    return ChatHuggingFace(llm=llm)
+    return ChatGoogleGenerativeAI(model='gemini-2.5-flash')
+    # llm = HuggingFaceEndpoint(
+    #     model='meta-llama/Llama-3.1-8B-Instruct',
+    #     task='text-generation'
+    # )
+    # return ChatHuggingFace(llm=llm)
 
 
 model = get_model()
