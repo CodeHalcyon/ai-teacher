@@ -1,4 +1,5 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import load_prompt
 from dotenv import load_dotenv
 import streamlit as st
@@ -12,7 +13,12 @@ def load_my_prompt():
 
 @st.cache_resource
 def get_model():
-    return ChatGoogleGenerativeAI(model='gemini-2.5-pro')
+    llm = HuggingFaceEndpoint(
+        model='meta-llama/Llama-3.1-8B-Instruct',
+        task='text-generation'
+    )
+    return ChatHuggingFace(llm=llm)
+
 
 model = get_model()
 template = load_my_prompt()
