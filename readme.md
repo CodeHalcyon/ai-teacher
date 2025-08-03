@@ -1,5 +1,5 @@
 # Study Buddy - Your AI-Powered Exam Preparer
-
+[Check it out here!](https://iit-jee-ai-teacher.streamlit.app/)<br/>
 Study Buddy is an interactive web application designed to help students prepare for various exams, from competitive entrance tests like IIT-JEE to university-level computer science courses. It leverages the power of Large Language Models (LLMs) to provide in-depth explanations, key formulas, revision notes, and practice questions on specific topics, tailored to the chosen subject and exam style.
 
 ## Project Overview
